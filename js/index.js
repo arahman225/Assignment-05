@@ -1,6 +1,6 @@
 
 
-// First part Modal ----------
+// First Blog ----------
 
 const modal = document.getElementById('my_modal_1');
 const openModalBtn = document.getElementById('openModalBtn');
@@ -45,15 +45,9 @@ openModalBtn.addEventListener('click', function() {
 
 
 
-    // Showing Exact Time and Date ------------------start
 
 
-
-    // Showing Exact Time and Date ------------------ end
-
-
-    // Showing History And  -------------------------
-
+    // Showing History -------------------------
 
 
     const div = document.createElement('div');
@@ -82,12 +76,12 @@ else{
 
 
 
-// Second ------------------------------------------
+// Second Blgo ------------------------------------------
 
 
 
 
-const modal2 = document.getElementById('my_modal_5');
+const modal2 = document.getElementById('my_modal_4');
 const openModalBtn2 = document.getElementById('openModalBtn2');
 
 
@@ -111,11 +105,13 @@ openModalBtn2.addEventListener('click', function() {
     // Showing the modal section by clicking
     modal2.showModal(); 
     
+
     // Available Balance  && Donate Balance---------------------
 
     const availAbleBalance = parseFloat(document.getElementById('balance').innerText);
     const donation_from_blance = availAbleBalance - getAmountFromInput2;
     document.getElementById('balance').innerText = donation_from_blance;
+
 
 
     // Adding Balance from input amount
@@ -130,17 +126,8 @@ openModalBtn2.addEventListener('click', function() {
 
 
 
-    // Showing Exact Time and Date ------------------start
-
-    const TimeAndDateNow = new Date();
-    const full_time_date = TimeAndDateNow.toString();
-
-    // Showing Exact Time and Date ------------------ end
-
 
     // Showing History And  -------------------------
-
-    const showingHistory = document.getElementById('history-section');
 
     const div = document.createElement('div');
     div.classList.add('p-5','border', 'rounded-lg');
@@ -150,7 +137,7 @@ openModalBtn2.addEventListener('click', function() {
     div.appendChild(h2);
 
     const p = document.createElement('p');
-   p.innerText = `Date: ${full_time_date}`
+   p.innerText = `Date: ${showingTimeAndDate()}`
 
     div.append(p)
 
@@ -169,3 +156,79 @@ else{
 });
 
 
+
+// 
+
+// Third Blog ----------
+
+const modal3 = document.getElementById('my_modal_4');
+const openModalBtn3 = document.getElementById('openModalBtn3');
+
+
+
+openModalBtn3.addEventListener('click', function() {
+   
+    // Get the value from the input field
+    
+    const getAmountFromInput3 = getInputfieldValueById('input-amount3');
+    const balance = parseFloat(document.getElementById('balance').innerText)
+
+    // Check -----------------------------
+    if(isNaN(getAmountFromInput3)){
+        alert('Please enter a number')
+        return;
+    }
+
+    // If OR Else -------------------- condition --------------------
+
+   if (getAmountFromInput3 >0 && getAmountFromInput3 <= balance) {
+    // Showing the modal section by clicking
+    modal.showModal(); 
+    
+    // Available Balance  && Donate Balance---------------------
+
+    const availAbleBalance = parseFloat(document.getElementById('balance').innerText);
+    const donation_from_blance = availAbleBalance - getAmountFromInput3;
+    document.getElementById('balance').innerText = donation_from_blance;
+
+
+    // Adding Balance from input amount
+
+    const donationBalance3 = parseFloat(document.getElementById('donating-balance-three').innerText);
+
+    const addinBalanceFromInputAmount = donationBalance3 + getAmountFromInput3;
+
+    document.getElementById('donating-balance-three').innerText = addinBalanceFromInputAmount;
+
+    document.getElementById('input-amount3').value = ''
+
+
+
+
+
+    // Showing History -------------------------
+
+
+    const div = document.createElement('div');
+    div.classList.add('p-5','border', 'rounded-lg');
+
+    const h2 = document.createElement('h2');
+    h2.innerText = `${addinBalanceFromInputAmount} Tk  is Donated Aid for Injured in the Quota Movement in Bangladesh`;
+    div.appendChild(h2);
+
+    const p = document.createElement('p');
+   p.innerText = `Date: ${showingTimeAndDate()}`
+
+    div.append(p)
+
+    document.getElementById('history-section').appendChild(div)
+    
+
+
+} 
+
+else{
+    alert("Please enter a valid donation amount greater than 0 or less than available balance !");
+}
+
+});
