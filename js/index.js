@@ -69,7 +69,7 @@ openModalBtn.addEventListener('click', function() {
 } 
 
 else{
-    alert("Please enter a valid donation amount greater than 0 or less than available balance !");
+    alert("Please enter a valid donation amount. greater than 0 or less than available balance or equal balance !");
 }
 
 });
@@ -145,12 +145,10 @@ openModalBtn2.addEventListener('click', function() {
     
 
 
-    console.log(full_time_date)
-
 } 
 
 else{
-    alert("Please enter a valid donation amount greater than 0 or less than available balance !");
+    alert("Please enter a valid donation amount. greater than 0 or less than available balance or equal balance !");
 }
 
 });
@@ -209,6 +207,7 @@ openModalBtn3.addEventListener('click', function() {
     // Showing History -------------------------
 
 
+    
     const div = document.createElement('div');
     div.classList.add('p-5','border', 'rounded-lg');
 
@@ -217,18 +216,20 @@ openModalBtn3.addEventListener('click', function() {
     div.appendChild(h2);
 
     const p = document.createElement('p');
-   p.innerText = `Date: ${showingTimeAndDate()}`
+    p.innerText = `Date: ${showingTimeAndDate()}`
 
     div.append(p)
 
-    document.getElementById('history-section').appendChild(div)
+    document.getElementById('history-section').appendChild(div);
+
     
+
 
 
 } 
 
 else{
-    alert("Please enter a valid donation amount greater than 0 or less than available balance !");
+    alert("Please enter a valid donation amount. greater than 0 or less than available balance or equal balance !");
 }
 
 });
