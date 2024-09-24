@@ -217,12 +217,11 @@ openModalBtn3.addEventListener('click', function() {
     div.appendChild(h2);
 
     const p = document.createElement('p');
-    p.style.
-    p.innerText = `Date: ${showingTimeAndDate()}`
+   p.innerText = `Date: ${showingTimeAndDate()}`
 
     div.append(p)
 
-    document.getElementById('history-section').appendChild(div);
+    document.getElementById('history-section').appendChild(div)
 
 } 
 
