@@ -17,6 +17,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
     </style>
 
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -40,11 +41,11 @@
 </head>
 
 <body class="font-Lexend">
-    <section class=" sticky overflow-hidden top-0">
-        <div class="bg-secondary shadow-2xl">
+    <section class="sticky top-0">
+        <div class="bg-secondary">
             <header class="w-10/12 mx-auto">
                 <nav class="flex justify-between py-5">
-                    <a href="blog.html"><button class="btn px-7 py-4 bg-primary">Blog</button></a>
+                    <a href="blog.html"><button class="btn px-7 py-4 bg-primary mr-5">Blog</button></a>
                     <div class="flex items-center justify-center gap-2">
                         <img src="assets/logo.png" alt="">
                         <p class="font-Lexend">
@@ -60,9 +61,9 @@
                 </div>
             </header>
         </div>
-        <div class="flex justify-center gap-5 pb-12 pt-14 bg-white shadow-2xl">
+        <div class="flex justify-center gap-5 pb-12 pt-14 btn-scroll">
             <button id="donation-btn" class="btn bg-primary px-10 font-semibold text-xl">Donation</button>
-            <button id="history-btn" class="btn text-thirdColor px-10 font-semibold text-xl border border-gray-400">History</button>
+            <button id="history-btn"class="btn text-thirdColor px-10 font-semibold text-xl border border-gray-400">History</button>
         </div>
     </section>
 
@@ -89,7 +90,7 @@
                         </p>
                         <input id="input-amount-1" class="w-full border p-5 rounded" type="text"
                             placeholder="Write Donation Amount">
-                         <!-- showModal three ------ -->
+                        <!-- showModal three ------ -->
                         <button id="openModalBtn" class="btn w-full bg-primary">Donate Now</button>
                         <dialog id="my_modal_1" class="modal">
                             <div class="modal-box space-y-5">
@@ -132,7 +133,7 @@
                         </p>
                         <input id="input-amount2" class="w-full border p-5 rounded" type="text"
                             placeholder="Write Donation Amount">
-                    <!-- showModal two ------ -->
+                        <!-- showModal two ------ -->
                         <button id="openModalBtn2" class="btn w-full bg-primary">Donate Now</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box space-y-5">
@@ -176,7 +177,7 @@
                         </p>
                         <input id="input-amount3" class="w-full border p-5 rounded" type="text"
                             placeholder="Write Donation Amount">
-      
+
                         <!-- showModal three ------ -->
                         <button id="openModalBtn3" class="btn w-full bg-primary">Donate Now</button>
                         <dialog id="my_modal_4" class="modal">
@@ -202,8 +203,8 @@
 
         <!-- History Section start -------------------------------- -->
         <section class="mt-5">
-            <div id="history-section" class="w-10/12 mx-auto space-y-5 hidden">
- 
+            <div id="history-section" class="w-10/12 mx-auto space-y-7 hidden bg-gray-50">
+
             </div>
         </section>
         <!-- History Section end -------------------------------- -->
@@ -213,6 +214,7 @@
 
 
     <!---------------------------- Main Section end ------------------------ -->
+
     <script src="js/modalFunctions.js"></script>
     <script src="js/index.js"></script>
     <script src="js/feature.js"></script>

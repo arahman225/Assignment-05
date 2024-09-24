@@ -1,4 +1,14 @@
 
+// Navbar -------------------------
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 0) {
+        document.querySelector('.btn-scroll').classList.add('bg-secondary', 'shadow-lg');
+    } else {
+        document.querySelector('.btn-scroll').classList.remove('bg-secondary','shadow-lg');
+    }
+});
+
 
 // First Blog ----------
 
@@ -45,10 +55,7 @@ openModalBtn.addEventListener('click', function() {
 
 
 
-
-
     // Showing History -------------------------
-
 
     const div = document.createElement('div');
     div.classList.add('p-5','border', 'rounded-lg');
@@ -64,8 +71,6 @@ openModalBtn.addEventListener('click', function() {
 
     document.getElementById('history-section').appendChild(div)
     
-
-
 } 
 
 else{
@@ -76,7 +81,7 @@ else{
 
 
 
-// Second Blgo ------------------------------------------
+// Second Blog ------------------------------------------
 
 
 
@@ -126,7 +131,6 @@ openModalBtn2.addEventListener('click', function() {
 
 
 
-
     // Showing History And  -------------------------
 
     const div = document.createElement('div');
@@ -143,8 +147,6 @@ openModalBtn2.addEventListener('click', function() {
 
     document.getElementById('history-section').appendChild(div)
     
-
-
 } 
 
 else{
@@ -155,7 +157,7 @@ else{
 
 
 
-// 
+
 
 // Third Blog ----------
 
@@ -207,7 +209,6 @@ openModalBtn3.addEventListener('click', function() {
     // Showing History -------------------------
 
 
-    
     const div = document.createElement('div');
     div.classList.add('p-5','border', 'rounded-lg');
 
@@ -216,15 +217,12 @@ openModalBtn3.addEventListener('click', function() {
     div.appendChild(h2);
 
     const p = document.createElement('p');
+    p.style.
     p.innerText = `Date: ${showingTimeAndDate()}`
 
     div.append(p)
 
     document.getElementById('history-section').appendChild(div);
-
-    
-
-
 
 } 
 
