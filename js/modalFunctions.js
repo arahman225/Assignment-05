@@ -1,5 +1,5 @@
-//  Modal Function For Donation Balance --------------
 
+//  Modal Function For Donation Balance --------------
 
 function getInputfieldValueById(id){
 
@@ -9,7 +9,7 @@ function getInputfieldValueById(id){
 
 }
 
-// Time Function ---------------------
+// Date and Time Function ---------------------
 
 function showingTimeAndDate(){
     const TimeAndDateNow = new Date();
@@ -17,6 +17,7 @@ function showingTimeAndDate(){
 
     return full_time_date
 }
+
 
 
 

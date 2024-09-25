@@ -8,19 +8,25 @@ const donationButton = document.getElementById('donation-btn')
 
 historyButton.addEventListener('click', function(){
     
-    // Class hidden in the history section
+    // Class "hidden" remove in the history section
     const historySectino = document.getElementById('history-section');
     historySectino.classList.remove('hidden');
     historyButton.style.background= '#B4F461'
     historyButton.style.border = 'none'
+
     // Class "hidden" add in the history section
 
     const homeSection = document.getElementById('home-secton');
     homeSection.classList.add('hidden')
     donationButton.classList.remove('bg-primary')
-    // remove color "bg-color"
+    
 
 })
+
+
+
+
+// Showing Donation by clicking button 
 
 
 donationButton.addEventListener('click', function(){
