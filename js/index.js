@@ -62,6 +62,8 @@ openModalBtn.addEventListener('click', function() {
 
     const h2 = document.createElement('h2');
     h2.innerText = `${addinBalanceFromInputAmount} Tk  is Donated for famine-2024 at Noakhali, Bangladesh`;
+    h2.classList.add('font-bold');
+    h2.classList.add('text-green-600');
     div.appendChild(h2);
 
     const p = document.createElement('p');
@@ -138,6 +140,8 @@ openModalBtn2.addEventListener('click', function() {
 
     const h2 = document.createElement('h2');
     h2.innerText = `${addinBalanceFromInputAmount} Tk  is Donated for famine-2024 in Feni, Bangladesh`;
+    h2.classList.add('font-bold');
+    h2.classList.add('text-green-600');
     div.appendChild(h2);
 
     const p = document.createElement('p');
@@ -214,6 +218,8 @@ openModalBtn3.addEventListener('click', function() {
 
     const h2 = document.createElement('h2');
     h2.innerText = `${addinBalanceFromInputAmount} Tk  is Donated Aid for Injured in the Quota Movement in Bangladesh`;
+    h2.classList.add('font-bold');
+    h2.classList.add('text-green-600');
     div.appendChild(h2);
 
     const p = document.createElement('p');
